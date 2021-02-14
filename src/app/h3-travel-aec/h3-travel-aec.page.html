@@ -1,7 +1,5 @@
 <ion-content>
   <ion-content class="fondologin">
-
-
     <div id="center">
       <ion-list-header>
         <ion-label id="fontstyle">{{namecountry}}</ion-label>
@@ -10,7 +8,6 @@
         <ion-img [src]="listAEC.nationalFlag"></ion-img>
       </div>
     </div>
-
 
     <ion-card>
       <div>
@@ -47,24 +44,15 @@
     </ion-card>
 
     <div>
-      <ion-label style="color: aliceblue; margin-left: 10px;" id="discription">{{listAEC.credit}}</ion-label>
+      <ion-label style="color: aliceblue; margin-left: 10%; margin-top: 5%;" id="discription">{{listAEC.credit}}</ion-label>
     </div>
 
     <div text-left style="margin-top: 30px; padding: 0 10px;"></div>
 
     <div text-left style="margin-top: 30px; padding: 0 10px;">
-      <ion-button (click)="popForward()" color="medium" shape="round" expand="full">
+      <ion-button id="margin-button" (click)="popForward()" color="medium" shape="round" expand="full">
         back
         <ion-icon slot="end" name="md-log-in"></ion-icon>
       </ion-button>
     </div>
   </ion-content>
-
-
-  <div text-left style="margin-top: 30px; padding: 0 10px;">
-    <ion-button (click)="popForward()" color="medium" shape="round" expand="full">
-      back
-      <ion-icon slot="end" name="md-log-in"></ion-icon>
-    </ion-button>
-  </div>
-</ion-content>

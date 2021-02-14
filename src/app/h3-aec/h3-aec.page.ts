@@ -39,9 +39,18 @@ export class H3AecPage implements OnInit {
   async presentActionSheet(country) {
     const actionSheet = document.createElement('ion-action-sheet');
 
-    actionSheet.header = 'Other';
+    actionSheet.header = 'SELECT';
     actionSheet.cssClass = 'my-custom-class';
-    actionSheet.buttons = [{
+    actionSheet.buttons = [ {
+      text: 'Detail',
+      icon: 'enter',
+      handler: () => {
+        // console.log('Favorite clicked');
+        this.countrys = country;
+        // console.log(this.countrys)
+        this.navCtrl.navigateForward('/h3-detail-aec/'+ this.countrys)
+      }
+    },{
       text: 'Travel',
       icon: 'globe',
       handler: () => {
@@ -50,26 +59,6 @@ export class H3AecPage implements OnInit {
         this.countrys = country;
         // console.log(this.countrys)
         this.navCtrl.navigateForward('/h3-travel-aec/'+ this.countrys)
-      }
-    }, {
-      text: 'Play (open modal)',
-      icon: 'caret-forward-circle',
-      handler: () => {
-        console.log('Play clicked');
-
-      }
-    }, {
-      text: 'Favorite',
-      icon: 'heart',
-      handler: () => {
-        console.log('Favorite clicked');
-      }
-    }, {
-      text: 'Cancel',
-      icon: 'close',
-      role: 'cancel',
-      handler: () => {
-        console.log('Cancel clicked');
       }
     }];
     document.body.appendChild(actionSheet);

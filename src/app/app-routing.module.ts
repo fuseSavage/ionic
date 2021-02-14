@@ -39,6 +39,11 @@ const routes: Routes = [
     path: 'w3-calbmi-page/:sendw/:sendh',
     loadChildren: () => import('./w3-calbmi-page/w3-calbmi-page.module').then( m => m.W3CalbmiPagePageModule)
   },
+  {
+    path: 'h3-detail-aec/:sendAEC',
+    loadChildren: () => import('./h3-detail-aec/h3-detail-aec.module').then( m => m.H3DetailAecPageModule)
+  },
+
 ];
 
 @NgModule({

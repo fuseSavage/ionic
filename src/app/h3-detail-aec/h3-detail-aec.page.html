@@ -1,0 +1,47 @@
+<ion-content>
+  <ion-content class="fondologin">
+    <div id="center">
+      <ion-list-header>
+        <ion-label id="fontstyle">{{namecountry}}</ion-label>
+      </ion-list-header>
+      <div id="imglogoaec">
+        <ion-img [src]="details.nationalFlag"></ion-img>
+      </div>
+    </div>
+    <ion-card>
+      <div id="marginUL">
+        <ion-label><b>ชื่อเป็นทางการ : </b> {{details.officialname}} </ion-label>
+      </div>
+      <div id="marginUL">
+        <ion-label><b>ชื่อเมืองหลวง : </b> {{details.capital}} </ion-label>
+      </div>
+      <div id="marginUL">
+        <ion-label><b>ภาษาประจำชาติ : </b> {{details.language}} </ion-label>
+      </div>
+      <div id="marginUL">
+        <ion-label><b>ศาสนาประจำชาติ : </b> {{details.religion}} </ion-label>
+      </div>
+      <div id="marginUL">
+        <ion-label><b>สกุลเงิน : </b> {{details.currency}} </ion-label>
+      </div>
+      <div id="marginUL">
+        <ion-label><b>ประชากร : </b> {{details.population}} </ion-label>
+      </div>
+
+    </ion-card>
+
+
+    <div id="discription">
+      <ion-label >{{details.credit}}
+      </ion-label>
+    </div>
+
+    <div text-left style="margin-top: 30px; padding: 0 10px;"></div>
+
+    <div text-left style="margin-top: 30px; padding: 0 10px;">
+      <ion-button id="margin-button" (click)="popForward()" color="medium" shape="round" expand="full">
+        back
+        <ion-icon slot="end" name="md-log-in"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-content>
