@@ -1,26 +1,30 @@
 <ion-content>
   <ion-content class="fondologin">
 
-    <div id="container">
-      <div id="center">
-        <ion-list-header>
-          <ion-label id="fontstyle">{{namecountry}}</ion-label>
-        </ion-list-header>
-        <div id="imglogoaec">
-          <ion-img [src]="listAEC.nationalFlag"></ion-img>
-        </div>
+
+    <div id="center">
+      <ion-list-header>
+        <ion-label id="fontstyle">{{namecountry}}</ion-label>
+      </ion-list-header>
+      <div id="imglogoaec">
+        <ion-img [src]="listAEC.nationalFlag"></ion-img>
       </div>
     </div>
 
+
     <ion-card>
       <div>
-        <ion-img [src]="listAEC.logo1"></ion-img>
+        <div id="marginlogo">
+          <ion-img [src]="listAEC.logo1"></ion-img>
+        </div>
 
-        <ion-list-header>
-          <ion-label id="titlestyle">{{listAEC.title1}}</ion-label>
-        </ion-list-header>
+        <div id="margintext">
+          <ion-list-header>
+            <ion-label id="titlestyle">{{listAEC.title1}}</ion-label>
+          </ion-list-header>
 
-        <ion-label id="discription">{{listAEC.discription1}}</ion-label>
+          <ion-label id="discription">{{listAEC.discription1}}</ion-label>
+        </div>
       </div>
     </ion-card>
 
@@ -28,15 +32,18 @@
 
     <ion-card>
       <div>
-        <ion-img [src]="listAEC.logo2"></ion-img>
+        <div id="marginlogo">
+          <ion-img [src]="listAEC.logo2"></ion-img>
+        </div>
 
-        <ion-list-header>
-          <ion-label id="titlestyle">{{listAEC.title2}}</ion-label>
-        </ion-list-header>
+        <div id="margintext">
+          <ion-list-header>
+            <ion-label id="titlestyle">{{listAEC.title2}}</ion-label>
+          </ion-list-header>
 
-        <ion-label id="discription">{{listAEC.discription2}}</ion-label>
+          <ion-label id="discription">{{listAEC.discription2}}</ion-label>
+        </div>
       </div>
-
     </ion-card>
 
     <div>

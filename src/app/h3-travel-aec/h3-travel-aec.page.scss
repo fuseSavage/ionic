@@ -16,24 +16,26 @@ ion-content, #imglogoaec {
   background: #e5e5e5;
 }
 
-#container {
-  text-align: center;
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
 #center {
   text-align: center;
+  margin-top: 5%;
 }
 
-#marginstyle {
-  margin-right: 30%;
-  margin-left: 30%;
+#marginlogo {
+  margin-top: 3%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
+#margintext{
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
 #imglogoaec {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   margin: auto;
+  margin-top: 3%;
   border-radius: 70%;
 }
 ion-card img {
@@ -42,7 +44,7 @@ ion-card img {
 #fontstyle {
   color: gray;
   font-family: "Trebuchet MS", sans-serif;
-  font-size: 40px;
+  font-size: 60px;
   font: optional;
 }
 #titlestyle {
@@ -64,3 +66,29 @@ ion-card img {
   font-family: "Trebuchet MS", sans-serif;
 
 }
+
+@media only screen and (max-width: 800px) {
+  #imglogoaec {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 70%;
+  }
+
+  #marginlogo {
+    margin-top: 3%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  #margintext{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  #fontstyle {
+    font-size: 30px;
+  }
+}
+

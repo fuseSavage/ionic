@@ -4,8 +4,8 @@ ion-content, #imglogoaec {
 #container {
   text-align: center;
   margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 #center {
@@ -30,4 +30,23 @@ margin-left: 30%;
 margin-right: 30%;
 }
 
+
+@media only screen and (max-width: 800px) {
+
+  #container {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #margin-button{
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    }
+
+
+}
 

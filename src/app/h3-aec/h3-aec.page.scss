@@ -19,8 +19,8 @@ ion-content, #imglogoaec {
 #container {
   text-align: center;
   margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 #center {
   text-align: center;
@@ -49,4 +49,15 @@ ion-content, #imglogoaec {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 20px;
   font: optional;
+}
+
+@media only screen and (max-width: 800px) {
+
+  #container {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
 }

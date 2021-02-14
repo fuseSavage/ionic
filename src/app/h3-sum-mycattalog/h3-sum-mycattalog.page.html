@@ -2,15 +2,15 @@
 <ion-content>
   <div id="container">
     <ion-list-header>
-      <ion-label color="tertiary">สินค้าที่เลือก</ion-label>
+      <ion-label>สินค้าที่เลือก</ion-label>
     </ion-list-header>
   </div>
 
   <ion-card id="container">
-    <ion-label>รายการของสินค้า <br></ion-label>
+    <ion-label id="styletext">รายการของสินค้า <br></ion-label>
     <ion-row>
       <ion-col>
-        <ion-label> ชื่อสินค้า </ion-label>
+        <ion-label id="styletext"> ชื่อสินค้า </ion-label>
         <ion-item *ngFor='let pro of this.productlist; let i = index'>
           <ion-label>
          ชิ้นที่ {{i+1}} : {{this.productlist[i]}}
@@ -19,7 +19,7 @@
       </ion-col>
 
       <ion-col>
-        <ion-label> ราคา </ion-label>
+        <ion-label id="styletext"> ราคา </ion-label>
         <ion-item *ngFor='let pri of this.pricelist; let i = index'>
           <ion-label >
             {{this.pricelist[i]}} $

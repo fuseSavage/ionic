@@ -1,46 +1,39 @@
-<ion-header style="text-align: center;" [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Ionic Project 63/2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
   <div id="body">
-    <ion-header collapse="condense">
-      <ion-toolbar>
-        <ion-title size="large">Ionic Project 63/2</ion-title>
+    <ion-header>
+      <ion-toolbar style="text-align: center;">
+        <ion-label style="color: black; font-weight: bold; font-size: 30px;" >Ionic Project 63/2</ion-label>
       </ion-toolbar>
     </ion-header>
 
-    <div id="margin-button">
+    <div style="margin-top: 10%;">
       <strong>List Project</strong>
       <p>Week2 Sign in page </p>
-      <ion-button (click)="signin()" color="tertiary" shape="round" expand="full">
+      <ion-button id="margin-button"  (click)="signin()" color="dark" shape="round" expand="full">
         Go To Page
         <ion-icon slot="end" name="md-log-in"></ion-icon>
       </ion-button>
 
       <p>Week3 BMI </p>
-      <ion-button (click)="bmipage()" color="tertiary" shape="round" expand="full">
+      <ion-button id="margin-button" (click)="bmipage()" color="dark" shape="round" expand="full">
         Go To Page
         <ion-icon slot="end" name="md-log-in"></ion-icon>
       </ion-button>
     </div>
 
 
-    <div id="margin-button" style="margin-top: 10%;">
+    <div style="margin-top: 10%;">
       <strong>List Homework</strong>
 
       <p>Week3 P.1 : Create My Catalog App to make order, using Lists as follows </p>
-      <ion-button (click)="catalogpage()" color="tertiary" shape="round" expand="full">
+      <ion-button id="margin-button"  (click)="catalogpage()" color="dark" shape="round" expand="full">
         Go To Page
         <ion-icon slot="end" name="md-log-in"></ion-icon>
       </ion-button>
 
       <p>Week3 P.2 : Tarvel AEC</p>
-      <ion-button (click)="aecpage()" color="tertiary" shape="round" expand="full">
+      <ion-button id="margin-button"  (click)="aecpage()" color="dark" shape="round" expand="full">
         Go To Page
         <ion-icon slot="end" name="md-log-in"></ion-icon>
       </ion-button>

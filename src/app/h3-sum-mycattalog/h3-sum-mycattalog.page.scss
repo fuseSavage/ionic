@@ -1,21 +1,40 @@
-ion-content, #imglogoaec {
+ion-content,
+#imglogoaec {
   --ion-background-color: #999892;
 }
 #container {
   text-align: center;
   margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
-
-#margin-button{
+#styletext {
+  color: black;
+  font-weight: bold;
+}
+#margin-button {
   text-align: center;
   margin-top: 3%;
   margin-left: 30%;
   margin-right: 30%;
-  }
-#marginstyle{
+}
+#marginstyle {
   margin-right: 30%;
   margin-left: 30%;
+}
 
+@media only screen and (max-width: 800px) {
+  #container {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #margin-button {
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
