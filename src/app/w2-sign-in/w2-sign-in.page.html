@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-header>SIGN-IN Page</ion-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form id="container">
+    <ion-list-header>
+      <ion-label color="tertiary">SIGN IN</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input [(ngModel)]="getuser" type="username" maxlength="10" name="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input [(ngModel)]="getpass" type="password" maxlength="8" name="password"></ion-input>
+    </ion-item>
+
+  </form>
+
+  <ion-list id="margin-position">
+    <ion-list-header>
+      <ion-label>Social Media</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let tmp of this.cblist">
+      <ion-icon name={{tmp.iconname}}></ion-icon>
+      <ion-label style="margin-left: 2%;" >{{tmp.title}}</ion-label>
+      <ion-checkbox [(ngModel)]="tmp.checked" slot="end" value={{tmp.value}}></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-list id="margin-position">
+    <ion-radio-group [(ngModel)]="channel">
+      <ion-list-header>
+        <ion-label>Channel</ion-label>
+      </ion-list-header>
+
+      <ion-item *ngFor="let chan of this.channellist">
+        <ion-icon name={{chan.iconname}}></ion-icon>
+        <ion-label>{{chan.title}}</ion-label>
+        <ion-radio color="success" slot="start" value={{chan.value}}  ></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <div text-left style="margin-top: 30px; padding: 0 10px;">
+
+    <div class="card" id="margin-button">
+      <ion-button (click)="checkuser()" color="tertiary" shape="round" expand="full">
+        SIGN IN
+        <ion-icon slot="end" name="md-log-in"></ion-icon>
+      </ion-button>
+
+      <ion-button (click)="popForward()" color="light" shape="round" expand="full">
+        BACK
+        <ion-icon slot="end" name="md-log-in"></ion-icon>
+      </ion-button>
+    </div>
+
+  </div>
+</ion-content>

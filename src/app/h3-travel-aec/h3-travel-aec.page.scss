@@ -1,0 +1,66 @@
+ion-content, #imglogoaec {
+  --ion-background-color: #111d12;
+}
+
+.my-custom-class {
+  --background: #e5e5e5;
+}
+
+/* DOES NOT WORK - not specific enough */
+.action-sheet-group {
+  background: #e5e5e5;
+}
+
+/* Works - pass "my-custom-class" in cssClass to increase specificity */
+.my-custom-class .action-sheet-group {
+  background: #e5e5e5;
+}
+
+#container {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#center {
+  text-align: center;
+}
+
+#marginstyle {
+  margin-right: 30%;
+  margin-left: 30%;
+}
+#imglogoaec {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  border-radius: 70%;
+}
+ion-card img {
+  width: 20%; height: 20%;
+}
+#fontstyle {
+  color: gray;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 40px;
+  font: optional;
+}
+#titlestyle {
+  color: gray;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font: optional;
+}
+
+#fontAecStayle {
+  color: gray;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font: optional;
+}
+
+#discription {
+  font-size: 16px;
+  font-family: "Trebuchet MS", sans-serif;
+
+}

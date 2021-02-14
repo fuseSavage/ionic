@@ -1,0 +1,63 @@
+<ion-content>
+  <ion-content class="fondologin">
+
+    <div id="container">
+      <div id="center">
+        <ion-list-header>
+          <ion-label id="fontstyle">{{namecountry}}</ion-label>
+        </ion-list-header>
+        <div id="imglogoaec">
+          <ion-img [src]="listAEC.nationalFlag"></ion-img>
+        </div>
+      </div>
+    </div>
+
+    <ion-card>
+      <div>
+        <ion-img [src]="listAEC.logo1"></ion-img>
+
+        <ion-list-header>
+          <ion-label id="titlestyle">{{listAEC.title1}}</ion-label>
+        </ion-list-header>
+
+        <ion-label id="discription">{{listAEC.discription1}}</ion-label>
+      </div>
+    </ion-card>
+
+    <div text-left style="margin-top: 30px; padding: 0 10px;"></div>
+
+    <ion-card>
+      <div>
+        <ion-img [src]="listAEC.logo2"></ion-img>
+
+        <ion-list-header>
+          <ion-label id="titlestyle">{{listAEC.title2}}</ion-label>
+        </ion-list-header>
+
+        <ion-label id="discription">{{listAEC.discription2}}</ion-label>
+      </div>
+
+    </ion-card>
+
+    <div>
+      <ion-label style="color: aliceblue; margin-left: 10px;" id="discription">{{listAEC.credit}}</ion-label>
+    </div>
+
+    <div text-left style="margin-top: 30px; padding: 0 10px;"></div>
+
+    <div text-left style="margin-top: 30px; padding: 0 10px;">
+      <ion-button (click)="popForward()" color="medium" shape="round" expand="full">
+        back
+        <ion-icon slot="end" name="md-log-in"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-content>
+
+
+  <div text-left style="margin-top: 30px; padding: 0 10px;">
+    <ion-button (click)="popForward()" color="medium" shape="round" expand="full">
+      back
+      <ion-icon slot="end" name="md-log-in"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

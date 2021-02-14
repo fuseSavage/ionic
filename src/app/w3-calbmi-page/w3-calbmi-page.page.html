@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Calculate BMI</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-list-header>
+      <ion-label color="tertiary">Calculate BMI</ion-label>
+    </ion-list-header>
+  </div>
+
+  <ion-card id="marginCard">
+    <br>
+    <div>
+      <ion-list-header>{{weight}}</ion-list-header>
+    </div>
+    <div>
+      <ion-list-header>{{height}}</ion-list-header>
+    </div><br>
+  </ion-card>
+
+  <ion-card id="marginCard">
+    <br>
+    <div>
+      <ion-list-header>{{resultBMI}}</ion-list-header>
+    </div><br>
+  </ion-card>
+
+  <ion-card id="marginCard">
+    <br>
+    <div>
+      <ion-label>{{discription}}</ion-label>
+    </div><br>
+  </ion-card>
+
+  <ion-button id="margin-button" (click)="popForward()" color="light" shape="round" expand="full">
+    BACK
+    <ion-icon slot="end" name="md-log-in"></ion-icon>
+  </ion-button>
+
+</ion-content>

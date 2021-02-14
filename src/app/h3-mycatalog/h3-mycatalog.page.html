@@ -1,0 +1,34 @@
+
+<ion-content>
+  <ion-list id="container" >
+    <ion-list-header >
+      <ion-label>รายการสินค้า</ion-label>
+    </ion-list-header>
+
+    <ion-item *ngFor="let item of this.productlist">
+      <ion-thumbnail slot="start">
+        <ion-img [src]="item.img"></ion-img> >
+      </ion-thumbnail>
+      <ion-label >{{item.product}}</ion-label>
+      <ion-label>{{item.price}} $</ion-label>
+      <ion-checkbox [(ngModel)]="item.checked"></ion-checkbox>
+    </ion-item>
+
+  </ion-list>
+
+  <div text-left style="margin-top: 30px; padding: 0 10px;">
+
+    <div id="margin-button">
+      <ion-button (click)="sumItem()" color="tertiary" shape="round" expand="full">
+        เลือกสินค้า
+        <ion-icon slot="end" name="md-log-in"></ion-icon>
+      </ion-button>
+
+      <ion-button (click)="popForward()" color="light" shape="round" expand="full">
+        กลับ
+        <ion-icon slot="end" name="md-log-in"></ion-icon>
+      </ion-button>
+    </div>
+
+  </div>
+</ion-content>

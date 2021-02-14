@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ionic Project 63/2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Ionic Project 63/2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="margin-button">
+    <strong>List Project</strong>
+    <p>Week2 Sign in page </p>
+    <ion-button (click)="signin()" color="tertiary" shape="round" expand="full">
+      Go To Page
+      <ion-icon slot="end" name="md-log-in"></ion-icon>
+    </ion-button>
+
+    <p>Week3 BMI </p>
+    <ion-button (click)="bmipage()" color="tertiary" shape="round" expand="full">
+      Go To Page
+      <ion-icon slot="end" name="md-log-in"></ion-icon>
+    </ion-button>
+  </div>
+
+
+  <div id="margin-button" style="margin-top: 10%;">
+    <strong>List Homework</strong>
+
+    <p>Week3 P.1 : Create My Catalog App to make order, using Lists as follows  </p>
+    <ion-button (click)="catalogpage()" color="tertiary" shape="round" expand="full">
+      Go To Page
+      <ion-icon slot="end" name="md-log-in"></ion-icon>
+    </ion-button>
+
+    <p>Week3 P.2 : Tarvel AEC</p>
+    <ion-button (click)="aecpage()" color="tertiary" shape="round" expand="full">
+      Go To Page
+      <ion-icon slot="end" name="md-log-in"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>
